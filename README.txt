@@ -20,7 +20,7 @@ WP Widget using [ryangiglio's](https://github.com/ryangiglio/) excellent [jquery
 *   **Fully customizable.** You have 100% control over the markup, the CSS and even some of the Javascript. You can disable the default styles and include you own CSS. You can even replace the loader script with your own. With a few simple steps and basic HTML+CSS knowledge you can make this widget look how ever you want.
 *   **Server side cache for better performance.** All tweets are cached serverside for improved performance and to minimize the number of API calls(otherwise you may exceed your rate limit. 450 requests per 15 min window) **Not implemented yet, but it's coming soon**
 
-=Features and functionality=
+= Features and functionality =
 * Loads fast. Option to always load form cache first and then refresh.
 
 == Installation ==
