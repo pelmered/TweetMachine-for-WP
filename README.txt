@@ -3,11 +3,11 @@ Contributors: pekz0r, ryangiglio
 Tags: twitter, widget, live widget, live tweets, twitter feed, live feed
 Requires at least: 3.5
 Tested up to: 3.5
-Stable tag: 0.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a Live Twitter Widget usning jquery-tweetMachine
+Adds a Live Twitter Widget using jQuery-tweetMachine
 
 == Description ==
 **Create a Twitter live feed widget that fits your style!**
@@ -15,12 +15,12 @@ Adds a Live Twitter Widget usning jquery-tweetMachine
 **TweetMachine for WP is a simple but yet fully customizable Twitter live feed widget.**
 WP Widget using [ryangiglio's](https://github.com/ryangiglio/) excellent [jquery-tweetMachine](https://github.com/ryangiglio/jquery-tweetMachine) which is a Twitter live feed jQuery plugin. This plugin uses this as a foundation and ads an easy to use but still very customizable Wordpress widget.
 
-=So why is this widget better than Twitter's standard widget?=
-* **Add you own style.** You can style this widget how ever you want to make it fit info your design. 
-* **Fully customizable.** You have 100% control over the markup, the CSS and even some of the Javascript. You can disable the default styles and include you own CSS. You can even replace the loader script with your own. With a few simple steps and basic HTML+CSS knowledge you can make this widget look how ever you want.
-* **Server side cache for better performance.** All tweets are cached serverside for improved performance and to minimize the number of API calls(otherwise you may exceed your rate limit. 450 requests per 15 min window) **Not implemented yet, but it's comming soon**
+= So why is this widget better than Twitter's standard widget? =
+*   **Add you own style.** You can style this widget how ever you want to make it fit info your design. 
+*   **Fully customizable.** You have 100% control over the markup, the CSS and even some of the Javascript. You can disable the default styles and include you own CSS. You can even replace the loader script with your own. With a few simple steps and basic HTML+CSS knowledge you can make this widget look how ever you want.
+*   **Server side cache for better performance.** All tweets are cached serverside for improved performance and to minimize the number of API calls(otherwise you may exceed your rate limit. 450 requests per 15 min window) **Not implemented yet, but it's coming soon**
 
-=Features and functionality=
+= Features and functionality =
 * Loads fast. Option to always load form cache first and then refresh.
 
 == Installation ==
@@ -53,7 +53,7 @@ Use the "Custom markup" field. Documentation for this is on the configuration pa
 
 The recommended way to do this is to add the URL to your replacement script on the configuration page. This actually makes it possible continue to use the configuration page as it is!
 The plugin uses [wp_localize_script()](http://codex.wordpress.org/Function_Reference/wp_localize_script) to inject the options form the configuration page into the Javascript. All options are saved into the `tweetMachineData` object. See the default loader for more details. 
-The other not recommended option is to disable the script loading in the plugin completely and load the script yourself. 
+The other not recommended option is to disable the script loading in the plugin completely and load the script yourself. If you do this and want to access the options, use "tweetMachine-widget-script" as the script handle in the `wp_enqueue_script()` call.
 For latest documentation, see the [jQuery Tweet Machine GitHub page](https://github.com/ryangiglio/jquery-tweetMachine).
 
 == Screenshots ==
